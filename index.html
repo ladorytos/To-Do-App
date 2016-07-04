@@ -2,11 +2,48 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>TODO Application</title>
+  <title>To Do Application</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+<div class="container text-center">	
+	<div class="row">
+		<div class="col-md-offset-1 col-md-10">
+			<section id="header">
+	  		<h1>To Do App <i class="fa fa-pencil-square-o" aria-hidden="true"></i></h1>
+		  	<p>Que fácil es organizar tus tareas  <i class="fa fa-thumbs-o-up" aria-hidden="true"></i></p>
+		  </section>
+		  <section id="instruccion">
+				<div class="instrucciones">
+					<h3>Instrucciones</h3>
+					<ul>
+					  <li> Escribe <i class="fa fa-pencil" aria-hidden="true"> </i> tu tarea y luego pulsa el botón <b>"Ingresa tu tarea"</b></li>
+					  <li> Cuando ya hayas realizado tu tarea puedes tacharla, marcando el <b>cuadrito</b>
+					  <i class="fa fa-check-square-o" aria-hidden="true"></i>
+						</li>
+					  <li> Cuando desees, también puedes eliminar tu tarea, pinchando el <b>basurero </b>
+					  <i class="fa fa-trash-o" aria-hidden="true"></i>
+            </li>
+				  	<p>ES MUY FACIL <i class="fa fa-smile-o" aria-hidden="true"></i>  !!!!!</p>
+					</ul>
+				</div>
+			</section>
+			<section id="agTarea" class="agTarea">
+			  <textarea id="inputBox"></textarea>
+					<span class="input-group-btn">
+				  	<button class="btn btn-default" type="button" onclick="agregarTarea()">Ingresa tu tarea!</button>
+			 		</span>
+		   	<div id="lista">
+			 	<div id="tareas"></div>
+				</div>
+			</section>
+		</div>
+	</div>
+</div>
+
 	<script src="js/main.js"></script>
 </body>
 </html>
