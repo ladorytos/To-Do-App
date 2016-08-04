@@ -42,3 +42,5 @@ var clean = function() {
 	inputBox.value = "";
 	inputBox.focus();
 }
+
+
